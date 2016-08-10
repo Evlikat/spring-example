@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%red(%d) [%thread] %highlight(%-5level) [%F:%L] %boldYellow(%logger{5}) - %magenta(%mdc{username}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework" level="WARN"/>
+
+    <root level="${logback.level}">
+        <appender-ref ref="console" />
+    </root>
+</configuration>
