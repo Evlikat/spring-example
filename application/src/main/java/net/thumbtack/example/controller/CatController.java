@@ -42,11 +42,11 @@ public class CatController {
 
     @PostMapping
     public Cat create(@RequestBody CatCreation creation) {
-        return catRepository.saveAndFlush(creation.toCat());
+        return catRepository.saveAndFlush(creation.build());
     }
 
     @PostMapping("/clone")
     public Cat createWithClone(@RequestBody CatCreation creation) {
-        return catService.createWithClone(creation.toCat());
+        return catService.createWithClone(creation.build());
     }
 }

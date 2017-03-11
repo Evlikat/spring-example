@@ -10,7 +10,7 @@ public class CatCreation {
     @Size(min = 2, max = 50)
     private String name;
 
-    public Cat toCat() {
+    public Cat build() {
         return new Cat(name);
     }
 }

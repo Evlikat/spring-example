@@ -14,6 +14,8 @@ public class Mvc extends WebMvcConfigurerAdapter {
     public void addViewControllers(final ViewControllerRegistry registry) {
         registry.addViewController("").setViewName("index");
         registry.addViewController("login");
+        registry.addViewController("cats");
+        registry.addViewController("error");
         registry.addViewController("bye");
     }
 
