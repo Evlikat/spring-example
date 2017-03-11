@@ -7,3 +7,9 @@ spring:
   datasource:
     initialize: true
     data: classpath*:sql/init.sql
+
+# see also http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
+endpoints:
+  enabled: false
+  health:
+    enabled: true
