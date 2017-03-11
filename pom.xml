@@ -24,7 +24,6 @@
         <module>application</module>
         <module>model</module>
         <module>services</module>
-        <module>service-impl</module>
     </modules>
 
     <dependencies>

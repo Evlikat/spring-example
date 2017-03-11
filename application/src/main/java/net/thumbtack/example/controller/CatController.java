@@ -2,7 +2,7 @@ package net.thumbtack.example.controller;
 
 import net.thumbtack.example.controller.model.CatCreation;
 import net.thumbtack.example.model.Cat;
-import net.thumbtack.example.repo.CatRepository;
+import net.thumbtack.example.service.CatRepository;
 import net.thumbtack.example.service.CatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
